@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "devx-ins-vp-demo-prep-0703"
+  description: "Template based App"
+  links:
+    - title: Website
+      # Change the template in the future to collect the domain name mtk8s.io
+      # parameters.properties.name(type: string,default: 'world!')
+      url: https://devx-ins-vp-demo-prep-0703.mtk8s.io
+  annotations:
+    argocd/app-name: "devx-ins-vp-demo-prep-0703"
+    sonarqube.org/project-key: "devx-ins-vp-demo-prep-0703"
+    jenkins.io/job-full-name: "devx-ins-vp-demo-prep-0703_App_Pipeline"
+    github.com/project-slug: kbmdev/devx-ins-vp-demo-prep-0703
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "devx-ins-vp-demo-prep-0703"
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/team-account"
+  system: "system:default/account-details"
